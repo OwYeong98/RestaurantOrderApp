@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_customerhomepage"
+    android:id="@+id/customer_mainscreen"
+    tools:context="com.oymj.restaurantorderapp.customerfragment.customerhomepage"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+
+    <TextView
+        android:id="@+id/feedbackthankyouword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thank You!"
+        android:textSize="70px"
+        android:textColor="#ffffff"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp" />
+
+
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="844px"
+        android:layout_height="167px"
+        android:textAlignment="center"
+        android:text="Please leave a feedback for us. Every feedback is important for our future improvement!"
+        android:textColor="#99cfe0"
+        android:textSize="45px"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/feedbackthankyouword"
+        app:layout_constraintHorizontal_bias="0.507" />
+    <View
+        android:layout_width="308dp"
+        android:layout_height="2px"
+        android:background="#ffffff"
+        android:layout_marginTop="13dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView17"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/view11" />
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="830px"
+        android:layout_height="135px"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="13dp"
+        app:layout_constraintTop_toBottomOf="@+id/view11"
+        app:layout_constraintHorizontal_bias="0.507">
+
+        <TableRow
+            android:id="@+id/feedbackstarrow"
+            android:layout_width="match_parent"
+            android:layout_height="130px"
+            android:background="#00000000">
+            <ImageButton
+                android:id="@+id/feedbackstar1"
+                android:layout_width="140px"
+                android:layout_height="140px"
+                android:scaleType="fitXY"
+                android:background="#00000000"
+                app:srcCompat="@drawable/ic_emptystar"
+                tools:layout_editor_absoluteX="89dp"
+                tools:layout_editor_absoluteY="143dp" />
+
+            <ImageButton
+                android:id="@+id/feedbackstar2"
+                android:layout_width="140px"
+                android:layout_height="140px"
+                android:layout_marginLeft="30px"
+                android:scaleType="fitXY"
+                android:background="#00000000"
+                app:srcCompat="@drawable/ic_emptystar"
+                tools:layout_editor_absoluteX="89dp"
+                tools:layout_editor_absoluteY="143dp" />
+
+            <ImageButton
+                android:id="@+id/feedbackstar3"
+                android:layout_width="140px"
+                android:layout_height="140px"
+                android:layout_marginLeft="30px"
+                android:scaleType="fitXY"
+                android:background="#00000000"
+                app:srcCompat="@drawable/ic_emptystar"
+                tools:layout_editor_absoluteX="89dp"
+                tools:layout_editor_absoluteY="143dp" />
+
+            <ImageButton
+                android:id="@+id/feedbackstar4"
+                android:layout_width="140px"
+                android:layout_height="140px"
+                android:layout_marginLeft="30px"
+                android:scaleType="fitXY"
+                android:background="#00000000"
+                app:srcCompat="@drawable/ic_emptystar"
+                tools:layout_editor_absoluteX="89dp"
+                tools:layout_editor_absoluteY="143dp" />
+
+            <ImageButton
+                android:id="@+id/feedbackstar5"
+                android:layout_width="140px"
+                android:layout_height="140px"
+                android:layout_marginLeft="30px"
+                android:scaleType="fitXY"
+                android:background="#00000000"
+                app:srcCompat="@drawable/ic_emptystar"
+                tools:layout_editor_absoluteX="89dp"
+                tools:layout_editor_absoluteY="143dp" />
+
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/pleaserateusword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Please Rate Us !"
+        android:textColor="#ffffff"
+        android:textSize="70px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout2"
+        app:layout_constraintHorizontal_bias="0.502" />
+
+    <TextView
+        android:id="@+id/feedbackword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Feedback"
+        android:textColor="#ffffff"
+        android:textSize="50px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/pleaserateusword" />
+
+    <EditText
+        android:id="@+id/feedbackcomment"
+        android:layout_width="805px"
+        android:layout_height="465px"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:background="@drawable/remarkedittextbackground"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/feedbackword"
+        app:layout_constraintHorizontal_bias="0.592" />
+
+    <ImageButton
+        android:id="@+id/nexttimethanksbutton"
+        android:layout_width="293px"
+        android:layout_height="138px"
+        android:scaleType="fitXY"
+        android:background="#000000"
+        app:srcCompat="@drawable/ic_nexttimethanks"
+        android:layout_marginLeft="53dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/feedbackcomment" />
+    <ImageButton
+        android:id="@+id/submitfeedbackbutton"
+        android:layout_width="293px"
+        android:layout_height="138px"
+        android:scaleType="fitXY"
+        android:background="#000000"
+        app:srcCompat="@drawable/ic_submitfeedback"
+        android:layout_marginRight="39dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/feedbackcomment" />
+
+
+</android.support.constraint.ConstraintLayout>

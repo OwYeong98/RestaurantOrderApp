@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:descendantFocusability="blocksDescendants">
+
+
+    <TextView
+        android:id="@+id/currentpaymentrequestusername"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="#d2f3f9"
+        android:text="John Doe"
+        android:textSize="60px"
+        android:layout_toRightOf="@+id/currentpaymentrequestuseric"
+        android:layout_marginLeft="35px" />
+
+
+    <TextView
+        android:id="@+id/currentpaymentrequesttablenno"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textColor="#d2f3f9"
+        android:text="30"
+        android:textSize="35px"
+        android:layout_marginLeft=".0dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/currentpaymentrequestusername" />
+
+    <TextView
+        android:id="@+id/currentpaymentrequesttotalprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#d2f3f9"
+        android:layout_toRightOf="@id/currentpaymentrequesttablenno"
+        android:layout_marginLeft="75px"
+        android:layout_centerVertical="true"
+        android:text="RM200.20"
+        android:textSize="40px" />
+
+    <ImageView
+        android:id="@+id/currentpaymentrequestuseric"
+        android:layout_width="146px"
+        android:layout_height="146px"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5px"
+        app:srcCompat="@drawable/ic_user" />
+
+</RelativeLayout>

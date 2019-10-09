@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:layout_width="161px"
+        android:layout_height="129px"
+        android:layout_marginLeft="20px"
+        android:id="@+id/foodiconcartconfirm"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20px" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Fried Rice"
+        android:textSize="45px"
+        android:textColor="#bbe7f9"
+        android:id="@+id/tablefoodorderedfoodname"
+        android:layout_marginLeft="9dp"
+        android:layout_marginStart="9dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/foodiconcartconfirm"
+        android:layout_toEndOf="@+id/foodiconcartconfirm" />
+
+    <TextView
+        android:id="@+id/tablefoodorderedquantity"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="10"
+        android:textColor="#88d9f2"
+        android:textSize="70px"
+        android:layout_marginLeft="20px"
+        android:layout_alignBottom="@+id/foodiconcartconfirm"
+        android:layout_toRightOf="@+id/tablefoodorderedfoodname"
+        android:layout_toEndOf="@+id/tablefoodorderedfoodname" />
+
+    <ImageButton
+        android:id="@+id/cancelcartconfirm"
+        android:layout_width="91px"
+        android:layout_height="91px"
+        android:background="#00000000"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/ic_cancelorder"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="60px"
+        android:layout_toLeftOf="@+id/editfoodcartconfirm" />
+
+    <ImageButton
+        android:id="@+id/editfoodcartconfirm"
+        android:layout_width="91px"
+        android:layout_height="91px"
+        android:layout_marginTop="60px"
+        android:layout_marginRight="30px"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/ic_edit"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/remarktitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/foodiconcartconfirm"
+        android:layout_below="@id/tablefoodorderedfoodname"
+        android:textSize="30px"
+        android:textColor="#ffffff"
+        android:text="Remark:"
+        android:layout_alignLeft="@+id/tablefoodorderedfoodname"
+        android:layout_alignStart="@+id/tablefoodorderedfoodname" />
+
+    <TextView
+        android:id="@+id/tablefoodorderedremark"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:textSize="25px"
+        android:textColor="#ffffff"
+        android:layout_below="@id/remarktitle"
+        android:layout_alignLeft="@+id/remarktitle"
+        android:layout_alignStart="@+id/remarktitle"
+        android:text="i want to have more spicy !!" />
+
+    <View
+        android:layout_width="1000px"
+        android:layout_marginLeft="40px"
+        android:layout_height="2px"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

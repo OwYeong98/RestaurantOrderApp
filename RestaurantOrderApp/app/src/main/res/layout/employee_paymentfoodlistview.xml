@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:layout_width="161px"
+        android:layout_height="129px"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="48px"
+        android:id="@+id/paymentimage"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Fried Rice"
+        android:textSize="35px"
+        android:textColor="#bbe7f9"
+        android:id="@+id/paymentfoodname"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/paymentimage" />
+
+    <TextView
+        android:id="@+id/paymentquantity"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="10"
+        android:textColor="#80d2e5"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/paymentfoodname"
+        android:textSize="50px"
+        android:layout_alignBottom="@+id/paymentfoodname" />
+
+
+    <TextView
+        android:id="@+id/paymentfoodprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="RM200.20"
+        android:textSize="40px" />
+
+</RelativeLayout>

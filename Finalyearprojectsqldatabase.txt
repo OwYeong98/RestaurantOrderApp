@@ -1,0 +1,146 @@
+create database restaurantorderapp;
+
+use restaurantorderapp;
+
+
+CREATE TABLE userid (
+    username varchar(20) not null,
+    password varchar(20) not null,
+    name varchar(20) not null,
+    age int(3) not null,
+    emailaddr varchar(30) not null,
+    gender varchar(6) not null,
+    privillage varchar(10) not null,
+    primary key (username)
+); 
+
+CREATE TABLE foodinfo (
+    foodname varchar(50) not null,
+    fooddesc varchar(500) not null,
+    foodprice DECIMAL(5,2) not null,
+    foodspicy int(1) not null,
+    containmeat int(1) not null,
+    foodsalty int(1) not null,
+    foodsweetness int(1) not null,
+    foodsour int(1) not null,
+    chefsuggest int(1) not null,
+    preparetime int(2) not null,
+    availableornot varchar(1) not null,
+    primary key (foodname)
+); 
+
+CREATE TABLE orderhistory (
+    orderid int(50) not null,
+    totalpayment DECIMAL(8,2) not null,
+    custusername varchar(20) not null,
+    date varchar(25) not null,
+    primary key (orderid)
+);
+
+CREATE TABLE orderedfoodhistory (
+    foodname varchar(50) not null,
+    orderid int(50) not null,
+    quantity int(3) not null,
+    totalprice DECIMAL(8,2) not null,
+    primary key (foodname,orderid)
+);
+
+CREATE TABLE notpayorderhistory (
+    orderid int(50) not null,
+    totalpayment DECIMAL(8,2) not null,
+    custusername varchar(20) not null,
+    date varchar(25) not null,
+    primary key (orderid)
+);
+
+CREATE TABLE notpayorderedfoodhistory (
+    foodname varchar(50) not null,
+    orderid int(50) not null,
+    quantity int(3) not null,
+    totalprice DECIMAL(8,2) not null,
+    primary key (foodname,orderid)
+);
+
+CREATE TABLE feedback(
+    username varchar(20) not null,
+    starcount int(1) not null,
+    comment varchar(100) not null,
+    date varchar(35) not null,
+    primary key (username,date)
+);
+
+Insert into userid(username,password,name,age,emailaddr,gender,privillage) values("admin","admin","John",18,"admin@hotmail.com","male","admin");
+Insert into userid(username,password,name,age,emailaddr,gender,privillage) values("employee","employee","Ali",18,"employee@hotmail.com","male","employee");
+Insert into userid(username,password,name,age,emailaddr,gender,privillage) values("customer","customer","Ow",18,"Ow@hotmail.com","male","customer");
+Insert into userid(username,password,name,age,emailaddr,gender,privillage) values("dude","dude","dude",18,"dude@hotmail.com","male","customer");
+Insert into userid(username,password,name,age,emailaddr,gender,privillage) values("waterstoom","waterstoom","waterstoom",18,"waterstoom@hotmail.com","male","customer");
+Insert into userid(username,password,name,age,emailaddr,gender,privillage) values("blackstoom","blackstoom","blackstoom",18,"blackstoom@hotmail.com","male","customer");
+Insert into userid(username,password,name,age,emailaddr,gender,privillage) values("customer2","customer2","Jack Wong",18,"Jack@hotmail.com","male","customer");
+Insert into userid(username,password,name,age,emailaddr,gender,privillage) values("employee2","employee2","Daniel Tan",18,"employee2@hotmail.com","male","employee");
+
+Insert into foodinfo values("Grill Chicken Chop","Our special chicken chop is grilled with some special herb together with some onion and salt. It is extremely delicous and tasty. Have a try and you will love it.",35.99,0,1,3,0,0,3,10,"Y");
+Insert into foodinfo values("Thai Satay","Stript of chicken or beef are marinated in a special Thai paste, then skewered and grilled or broiled in the oven for an hour before it served the customer.",19.99,2,1,1,0,1,2,5,"Y");
+Insert into foodinfo values("Italian Salad","ur salad uses the best Italian chopped salad recipe, with chopped fresh greens and veggies in a simple italian vinaigrette. It one of the healthiest food here.",10.00,0,0,0,2,2,1,5,"Y");
+Insert into foodinfo values("American Fried Rice","American fried rice is also called as khao pad American, is a thai dish served with protein like fried egg as well as chicken",15.50,1,1,2,1,1,3,3,"Y");
+Insert into foodinfo values("Special Fried Chicken","This fried chicken recipe is made by our restaurant owner where the chicken has  marinated with some special herb for a day before it get to fried.",25.99,0,1,3,1,0,3,2,"Y");
+Insert into foodinfo values("Ice Lemon Tea","Our homemade ice lemon tea is brewed with fresh lemon as well as quality tea making it fresh and cool. After you try it, You will surely love it!",5.99,0,0,0,2,1,3,2,"Y");
+Insert into foodinfo values("French Fries","One of the Special things about our French fries is marinated with salt for 2 hour before it get to fried. It is the favourite food of the children.",7.99,2,0,2,1,0,4,5,"Y");
+Insert into foodinfo values("Vegetarian Pizza","Our Pizza is used different type of vegetageble like tomato, onion and cabbage to baked, So it is extremely healthy as well as delicous. It is suitable for vegetarian.",14.99,2,0,1,0,2,3,6,"Y");
+Insert into foodinfo values("Homemade Coffee","Our Homemade coffee is brewed with high quality coffee bean. We used fresh milk that delivery by our milk factory daily. So our coffee is extreamely tasty.",2.99,0,0,0,2,1,4,4,"Y");
+Insert into foodinfo values("Grilled Lamb Chop","Our grilled lamb chop is one of the most famous food in our restaurant. It used many type of herb and some salt to grilled making it extremely tasty.",19.99,3,1,3,0,0,4,8,"Y");
+Insert into foodinfo values("Roasted Chicken","Our roasted chicken was cooked patiently for 4 hours before it was ready to serve our customer. The chicken is crispy and juicy as well.",14.99,2,1,3,0,1,4,10,"Y");
+
+Insert into orderhistory values(1,1100.00,"test","2016/10/01 00:09:20");
+Insert into orderhistory values(2,1200.00,"test","2016/10/02 00:09:20");
+Insert into orderhistory values(3,1300.00,"test","2016/10/03 00:09:20");
+Insert into orderhistory values(4,1400.00,"test","2016/10/04 00:09:20");
+Insert into orderhistory values(5,1500.00,"test","2016/10/05 00:09:20");
+Insert into orderhistory values(6,1600.00,"test","2016/10/06 00:09:20");
+Insert into orderhistory values(7,1700.00,"test","2016/10/07 00:09:20");
+Insert into orderhistory values(8,1800.00,"test","2016/10/08 00:09:20");
+Insert into orderhistory values(9,1900.00,"test","2016/10/09 00:09:20");
+Insert into orderhistory values(10,2000.00,"test","2016/10/10 00:09:20");
+Insert into orderhistory values(11,1800.00,"test","2016/10/11 00:09:20");
+Insert into orderhistory values(12,1900.00,"test","2016/10/12 00:09:20");
+Insert into orderhistory values(13,2100.00,"test1","2016/10/13 12:10:30");
+Insert into orderhistory values(14,3000.00,"test2","2016/10/14 16:11:22");
+Insert into orderhistory values(15,2000.00,"test","2016/10/15 00:09:20");
+Insert into orderhistory values(16,1000.00,"test","2016/10/16 00:09:20");
+Insert into orderhistory values(17,3000.00,"test","2016/10/17 00:09:20");
+Insert into orderhistory values(18,2500.00,"test","2016/10/18 00:09:20");
+Insert into orderhistory values(19,2000.00,"test","2016/10/19 00:09:20");
+Insert into orderhistory values(20,5000.00,"test","2016/10/20 00:09:20");
+Insert into orderhistory values(21,4000.00,"test","2016/10/21 00:09:20");
+Insert into orderhistory values(22,3000.00,"test","2016/10/22 00:09:20");
+Insert into orderhistory values(23,3500.00,"test","2016/10/23 00:09:20");
+Insert into orderhistory values(24,4500.00,"test","2016/10/24 00:09:20");
+Insert into orderhistory values(25,2500.00,"test","2016/10/25 00:09:20");
+Insert into orderhistory values(26,1100.00,"test","2016/10/26 00:09:20");
+Insert into orderhistory values(27,900.00,"test","2016/10/27 00:09:20");
+Insert into orderhistory values(28,700.00,"test","2016/10/28 00:09:20");
+Insert into orderhistory values(29,400.00,"test","2016/10/29 00:09:20");
+Insert into orderhistory values(30,200.00,"test","2016/10/30 00:09:20");
+Insert into orderhistory values(31,100.00,"test","2016/10/31 00:09:20");
+
+Insert into orderedfoodhistory values("Grill Chicken Chop",1,20,40.00);
+Insert into orderedfoodhistory values("Thai Satay",1,30,40.00);
+Insert into orderedfoodhistory values("Italian Salad",1,10,40.00);
+Insert into orderedfoodhistory values("American Fried Rice",1,22,40.00);
+Insert into orderedfoodhistory values("Special Fried Chicken",1,45,40.00);
+Insert into orderedfoodhistory values("Ice Lemon Tea",1,50,40.00);
+Insert into orderedfoodhistory values("French Fries",1,60,40.00);
+Insert into orderedfoodhistory values("Vegetarian Pizza",1,20,40.00);
+Insert into orderedfoodhistory values("Homemade Coffee",1,30,40.00);
+Insert into orderedfoodhistory values("Grilled Lamb Chop",1,5,40.00);
+Insert into orderedfoodhistory values("Roasted Chicken",1,8,40.00);
+
+
+
+Insert into feedback values("Michael Tan",5,"The food is nice and the service is fast!! very good","2016/10/31 00:09:20");
+Insert into feedback values("John Doe",3,"The food still need to be improved. not enough salty","2017/9/31 00:12:20");
+Insert into feedback values("Jeff Wong",1,"The food portion is too small. I hope you can improve on this ","2017/10/31 12:08:20");
+
+
+
+
+

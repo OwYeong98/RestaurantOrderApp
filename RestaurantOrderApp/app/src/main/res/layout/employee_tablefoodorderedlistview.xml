@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:layout_width="161px"
+        android:layout_height="129px"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="55px"
+        android:layout_alignParentTop="true"
+        android:id="@+id/tablefoodorderedfoodicon"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tablefoodorderedfoodname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_toEndOf="@+id/tablefoodorderedfoodicon"
+        android:layout_toRightOf="@+id/tablefoodorderedfoodicon"
+        android:text="Fried Rice"
+        android:textColor="#bbe7f9"
+        android:textSize="45px" />
+
+    <TextView
+        android:id="@+id/tablefoodorderedquantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="22dp"
+        android:layout_toEndOf="@+id/tablefoodorderedremark"
+        android:layout_toRightOf="@+id/tablefoodorderedremark"
+        android:text="10"
+        android:textColor="#88d9f2"
+        android:textSize="70px" />
+
+    <TextView
+        android:id="@+id/remarktitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tablefoodorderedfoodname"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/tablefoodorderedfoodicon"
+        android:layout_toRightOf="@+id/tablefoodorderedfoodicon"
+        android:text="Remark:"
+        android:textColor="#ffffff"
+        android:textSize="30px" />
+
+    <TextView
+        android:id="@+id/tablefoodorderedremark"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/remarktitle"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/tablefoodorderedfoodicon"
+        android:layout_toRightOf="@+id/tablefoodorderedfoodicon"
+        android:text="i want to have more spicy !!"
+        android:textColor="#ffffff"
+        android:textSize="25px" />
+
+
+
+
+
+</RelativeLayout>

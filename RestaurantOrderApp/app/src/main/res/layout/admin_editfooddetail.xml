@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    >
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_employeehomepage"
+        tools:context="com.oymj.restaurantorderapp.LoginScreen"
+        tools:layout_editor_absoluteY="81dp"
+        tools:layout_editor_absoluteX="0dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="96dp"
+            android:background="@drawable/ordertopbackground"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:id="@+id/constraintLayout">
+
+            <TextView
+                android:id="@+id/admin_toppagetitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Food Menu"
+                android:fontFamily="serif"
+                android:textSize="50px"
+                android:textColor="#35637c"
+                android:layout_marginRight="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/admin_toptitle"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
+            <TextView
+                android:id="@+id/admin_toptitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="serif"
+                android:text="ADMIN"
+                android:textColor="#467fa5"
+                android:textSize="90px"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <FrameLayout
+            android:layout_width="322dp"
+            android:layout_height="243dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/frameLayout"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="14dp"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+            <ImageView
+                android:id="@+id/editfooddetailfoodimage"
+                android:layout_width="966px"
+                android:layout_height="729px"
+                app:srcCompat="@drawable/biggrilledlambchop"
+
+                tools:layout_editor_absoluteX="22dp"
+                tools:layout_editor_absoluteY="28dp" />
+
+            <TextView
+                android:id="@+id/editfooddetailfoodname"
+                android:layout_gravity="bottom"
+                android:textAlignment="center"
+                android:layout_marginBottom="50px"
+                android:textSize="80px"
+                android:textColor="#bbe7f9"
+                android:shadowColor="#000000"
+                android:shadowRadius="4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+
+        </FrameLayout>
+
+
+        <EditText
+            android:id="@+id/editfooddetailchefsuggest"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner_textbox"
+            android:ems="10"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:text="1"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/editfooddetailpreparetime"
+            android:layout_marginLeft="0dp"
+            app:layout_constraintLeft_toLeftOf="@+id/editfooddetailpreparetime" />
+
+        <EditText
+            android:id="@+id/editfooddetailsour"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner_textbox"
+            android:ems="10"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:text="1"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/editfooddetailsweetness"
+            android:layout_marginLeft="-8dp"
+            app:layout_constraintLeft_toLeftOf="@+id/editfooddetailsweetness" />
+
+        <EditText
+            android:id="@+id/editfooddetailsweetness"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner_textbox"
+            android:ems="10"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:text="1"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/editfooddetailsalty"
+            android:layout_marginLeft="0dp"
+            app:layout_constraintLeft_toLeftOf="@+id/editfooddetailsalty" />
+
+        <EditText
+            android:id="@+id/editfooddetailsalty"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner_textbox"
+            android:ems="10"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:text="1"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/editfooddetailspicy"
+            android:layout_marginLeft="0dp"
+            app:layout_constraintLeft_toLeftOf="@+id/editfooddetailspicy" />
+
+        <EditText
+            android:id="@+id/editfooddetailcontainmeat"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner_textbox"
+            android:ems="10"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:text="Y"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/editfooddetailprice"
+            android:layout_marginLeft="0dp"
+            app:layout_constraintLeft_toLeftOf="@+id/editfooddetailprice" />
+
+        <EditText
+            android:id="@+id/editfooddetailspicy"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner_textbox"
+            android:ems="10"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:text="1"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/editfooddetailcontainmeat"
+            android:layout_marginLeft="0dp"
+            app:layout_constraintLeft_toLeftOf="@+id/editfooddetailcontainmeat" />
+
+        <EditText
+            android:id="@+id/editfooddetailprice"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner_textbox"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="10.50"
+            android:layout_marginTop="6dp"
+            app:layout_constraintTop_toBottomOf="@+id/editfooddetaildesc"
+            android:layout_marginLeft="-4dp"
+            app:layout_constraintLeft_toLeftOf="@+id/editfooddetaildesc" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="Contain meat:"
+            app:layout_constraintRight_toLeftOf="@+id/editfooddetailcontainmeat"
+            android:layout_marginRight="8dp"
+            app:layout_constraintTop_toTopOf="@+id/editfooddetailcontainmeat"
+            android:layout_marginTop="0dp" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food desc:"
+            android:textColor="#ffffff"
+            app:layout_constraintRight_toLeftOf="@+id/editfooddetaildesc"
+            android:layout_marginRight="20dp"
+            app:layout_constraintTop_toTopOf="@+id/editfooddetaildesc"
+            android:layout_marginTop="0dp" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food Sweetness:"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            app:layout_constraintRight_toLeftOf="@+id/editfooddetailsweetness"
+            android:layout_marginRight="6dp"
+            app:layout_constraintTop_toTopOf="@+id/editfooddetailsweetness"
+            android:layout_marginTop="0dp" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prepare time(min):"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            app:layout_constraintRight_toLeftOf="@+id/editfooddetailpreparetime"
+            android:layout_marginRight="0dp"
+            app:layout_constraintTop_toTopOf="@+id/editfooddetailpreparetime"
+            android:layout_marginTop="0dp" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:text="Chef suggest:"
+            android:textColor="#ffffff"
+            app:layout_constraintRight_toLeftOf="@+id/editfooddetailchefsuggest"
+            android:layout_marginRight="11dp"
+            app:layout_constraintTop_toTopOf="@+id/editfooddetailchefsuggest"
+            android:layout_marginTop="0dp" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food Sour:"
+            android:textColor="#ffffff"
+            app:layout_constraintRight_toLeftOf="@+id/editfooddetailsour"
+            android:layout_marginRight="21dp"
+            app:layout_constraintTop_toTopOf="@+id/editfooddetailsour"
+            android:layout_marginTop="0dp" />
+
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food Price:RM"
+            android:textColor="#ffffff"
+            app:layout_constraintRight_toLeftOf="@+id/editfooddetailprice"
+            android:layout_marginRight="13dp"
+            app:layout_constraintTop_toTopOf="@+id/editfooddetailprice"
+            android:layout_marginTop="3dp" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food Spicy:"
+            android:textColor="#ffffff"
+            app:layout_constraintRight_toLeftOf="@+id/editfooddetailspicy"
+            android:layout_marginRight="16dp"
+            app:layout_constraintTop_toTopOf="@+id/editfooddetailspicy"
+            android:layout_marginTop="-6dp" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food Salty:"
+            android:textColor="#ffffff"
+            app:layout_constraintRight_toLeftOf="@+id/editfooddetailsalty"
+            android:layout_marginRight="19dp"
+            app:layout_constraintTop_toTopOf="@+id/editfooddetailsalty"
+            android:layout_marginTop="0dp" />
+
+        <EditText
+            android:id="@+id/editfooddetaildesc"
+            android:layout_width="241dp"
+            android:layout_height="70dp"
+            android:paddingTop="10px"
+            android:ems="10"
+            android:gravity="top"
+            android:textSize="15sp"
+            android:background="@drawable/round_corner_textbox"
+            android:inputType="textMultiLine"
+            android:text="askjdlasjdlkasjaslasdfasdfasdfasdfasdfdjfhjkasfhjks"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="31dp"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+            android:layout_marginRight="16dp"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <EditText
+            android:id="@+id/editfooddetailpreparetime"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="1"
+            android:paddingLeft="20dp"
+            android:background="@drawable/round_corner_textbox"
+            android:inputType="number"
+            android:layout_marginTop="6dp"
+            app:layout_constraintTop_toBottomOf="@+id/editfooddetailsour"
+            android:layout_marginLeft="0dp"
+            app:layout_constraintLeft_toLeftOf="@+id/editfooddetailsour" />
+
+        <ImageButton
+            android:id="@+id/editfooddetailconfirmedit"
+            android:layout_width="293px"
+            android:layout_height="138px"
+            android:scaleType="fitXY"
+            android:background="#00000000"
+            app:srcCompat="@drawable/ic_confirmedit"
+            app:layout_constraintLeft_toRightOf="@+id/editfooddetailchefsuggest"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="169dp"
+            android:layout_marginBottom="500dp"
+            app:layout_constraintTop_toBottomOf="@+id/editfooddetaildesc" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

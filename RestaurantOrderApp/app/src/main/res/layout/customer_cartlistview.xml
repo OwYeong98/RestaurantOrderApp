@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:layout_width="161px"
+        android:layout_height="129px"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="48px"
+        android:id="@+id/foodiconcartnotconfirm"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Fried Rice"
+        android:textSize="45px"
+        android:textColor="#bbe7f9"
+        android:id="@+id/foodnamecartnotconfirm"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/foodiconcartnotconfirm"
+        android:layout_toEndOf="@+id/foodiconcartnotconfirm" />
+
+    <TextView
+        android:id="@+id/orderquantitycartnotconfirm"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="10"
+        android:textColor="#88d9fe"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/foodnamecartnotconfirm"
+        android:textSize="70px"
+        android:layout_alignBottom="@+id/foodnamecartnotconfirm" />
+
+    <ImageButton
+        android:id="@+id/cancelcartnotconfirm"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/ic_cancelorder" />
+
+    <View
+        android:layout_width="308dp"
+        android:layout_height="2px"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="80px"
+        android:id="@+id/view2" />
+
+</RelativeLayout>

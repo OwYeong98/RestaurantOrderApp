@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="1033px"
+    android:layout_height="286px"
+    android:id="@+id/foodlistviewrelativelayout"
+    android:descendantFocusability="blocksDescendants">
+
+
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="This is row number 15"
+        android:textSize="24px"
+        android:layout_marginLeft="60px"
+        android:layout_marginTop="20px"
+        android:textColor="#fcfcfc"
+        android:id="@+id/fooddesc"
+        android:layout_gravity="center_vertical|right"
+        android:layout_below="@+id/foodname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/foodname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fried Rice"
+        android:textColor="#bbe7f9"
+        android:textSize="60px"
+        android:layout_marginTop="20px"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/fooddesc"
+        android:layout_alignStart="@+id/fooddesc" />
+
+    <ImageButton
+        android:id="@+id/orderbutton"
+        android:layout_width="232px"
+        android:layout_height="109px"
+        android:scaleType="fitXY"
+        android:background="#00000000"
+        app:srcCompat="@drawable/ic_addtoorder"
+        android:layout_marginRight="19dp"
+        android:layout_marginEnd="19dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/stampnotavailable"
+        android:layout_width="290dp"
+        android:layout_height="90dp"
+        android:scaleType="fitXY"
+        android:background="#00000000"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/stamp_notavailable"
+        />
+</RelativeLayout>

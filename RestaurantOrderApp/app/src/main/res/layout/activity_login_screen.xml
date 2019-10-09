@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginscreenbackground"
+    tools:context="com.oymj.restaurantorderapp.LoginScreen"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+
+    <TextView
+        android:id="@+id/pwtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password: "
+        android:textSize="20sp"
+        android:textColor="#44656D"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/usertext"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:id="@+id/usertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username: "
+        android:textSize="20sp"
+        android:textColor="#44656D"
+        app:layout_constraintRight_toLeftOf="@+id/username"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="192dp"
+        android:layout_marginRight="6dp" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:textColor="#ffffff"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+
+        android:inputType="textPersonName"
+        android:background="@drawable/inputbackground"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintRight_toRightOf="@+id/password"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/password" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:paddingTop="20dp"
+        android:ems="10"
+        android:textColor="#ffffff"
+        android:paddingLeft="20dp"
+        android:inputType="textPassword"
+        android:background="@drawable/inputbackground"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/pwtext"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/pwtext"
+        app:layout_constraintLeft_toRightOf="@+id/pwtext"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="10dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="179dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/foodmonster"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/slogan"
+        android:layout_marginEnd="53dp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/username"
+        android:layout_marginStart="53dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="21dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="53dp"
+        android:layout_marginRight="53dp"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/loginbutton"
+        android:layout_width="96dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/login"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="44dp"
+        app:layout_constraintBottom_toBottomOf="@+id/registerbutton"
+        android:layout_marginEnd="43dp"
+        app:layout_constraintRight_toRightOf="@+id/password"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/registerbutton"
+        app:layout_constraintLeft_toRightOf="@+id/registerbutton"
+        android:layout_marginLeft="44dp"
+        android:layout_marginRight="43dp" />
+
+    <ImageButton
+        android:id="@+id/registerbutton"
+        android:layout_width="96dp"
+        android:layout_height="51dp"
+        app:srcCompat="@drawable/register"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/pwtext"
+        android:layout_marginLeft="55dp" />
+
+
+</android.support.constraint.ConstraintLayout>
