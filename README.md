@@ -12,7 +12,7 @@ There are few users in the App which are :
   * place the app in kitchen to view current order list
   * view payment request so that they can approach customer to collect bill
   * set food availability so that food that are out of stock will not be able to order by customer
-  * view the food ordered and total price
+  * view the bill of customer which consist total price and food ordered
 
 * Admin 
   * view food sales report
